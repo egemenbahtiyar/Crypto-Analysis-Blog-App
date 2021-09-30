@@ -1,0 +1,31 @@
+﻿@model BlogApp.Models.New
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Haber Detayı</h1>
+
+            <h1>@Model.HaberBaslik</h1>
+            <hr />
+            <p>
+                <span><i class="bi bi-clock"></i></span>
+                @Model.HaberEklenmeTarihi
+            </p>
+            <hr />
+            <img src="~/Image/@Model.Resim" asp-append-version="true" class="img-fluid newImg" />
+            <hr />
+            <p>
+                @Html.Raw(Model.HaberIcerik)
+            </p>
+
+            <div>
+                <a class="btn btn-light btn-sm mt-5" asp-controller="Home" asp-action="Index">Listeye geri dön</a>
+            </div>
+        </div>
+    </div>
+</div>

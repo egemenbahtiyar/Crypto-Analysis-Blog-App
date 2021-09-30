@@ -1,0 +1,21 @@
+﻿@model IEnumerable<BlogApp.Models.New>
+
+@foreach (var item in Model)
+{
+    <div class="card my-5">
+        <img src="~/Image/@item.Resim" asp-append-version="true" class="card-img-top img-thumbnail" alt="..." >
+        <div class="card-body">
+            <h5 class="card-title">@item.HaberBaslik</h5>
+            @*<p class="card-text">@item.HaberIcerik</p>*@
+            <a type="button" href="~/New/Details/@item.NewId" class="btn btn-primary">Daha Fazla...</a>
+            
+        </div>
+        <div class="card-footer text-muted">
+            <i class="bi bi-clock"></i>
+            @item.HaberEklenmeTarihi
+
+
+        </div>
+    </div>
+
+}

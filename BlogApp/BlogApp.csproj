@@ -1,0 +1,160 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+	
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+	
+
+  <ItemGroup>
+    <Compile Remove="Views\Home\Index.cshtml~RF85782336.TMP\**" />
+    <Content Remove="Views\Home\Index.cshtml~RF85782336.TMP\**" />
+    <EmbeddedResource Remove="Views\Home\Index.cshtml~RF85782336.TMP\**" />
+    <None Remove="Views\Home\Index.cshtml~RF85782336.TMP\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\owlcarousel\.gitattributes" />
+    <None Include="wwwroot\owlcarousel\.gitignore" />
+    <None Include="wwwroot\owlcarousel\.travis.yml" />
+    <None Include="wwwroot\owlcarousel\CONTRIBUTING.md" />
+    <None Include="wwwroot\owlcarousel\dist\LICENSE" />
+    <None Include="wwwroot\owlcarousel\dist\owl.carousel.js" />
+    <None Include="wwwroot\owlcarousel\dist\owl.carousel.min.js" />
+    <None Include="wwwroot\owlcarousel\dist\README.md" />
+    <None Include="wwwroot\owlcarousel\docs\assets\js\app.js" />
+    <None Include="wwwroot\owlcarousel\docs\assets\js\foundation.min.js" />
+    <None Include="wwwroot\owlcarousel\docs\assets\owlcarousel\owl.carousel.js" />
+    <None Include="wwwroot\owlcarousel\docs\assets\owlcarousel\owl.carousel.min.js" />
+    <None Include="wwwroot\owlcarousel\docs\assets\owlcarousel\README.md" />
+    <None Include="wwwroot\owlcarousel\docs\assets\vendors\foundation.min.js" />
+    <None Include="wwwroot\owlcarousel\docs\assets\vendors\highlight.js" />
+    <None Include="wwwroot\owlcarousel\docs\assets\vendors\jquery.min.js" />
+    <None Include="wwwroot\owlcarousel\docs\assets\vendors\jquery.min.map" />
+    <None Include="wwwroot\owlcarousel\docs\assets\vendors\jquery.mousewheel.min.js" />
+    <None Include="wwwroot\owlcarousel\docs_src\assets\js\app.js" />
+    <None Include="wwwroot\owlcarousel\docs_src\assets\js\foundation.min.js" />
+    <None Include="wwwroot\owlcarousel\docs_src\assets\scss\custom.scss" />
+    <None Include="wwwroot\owlcarousel\docs_src\assets\scss\demos.scss" />
+    <None Include="wwwroot\owlcarousel\docs_src\assets\scss\docs.scss" />
+    <None Include="wwwroot\owlcarousel\docs_src\assets\scss\docs.theme.scss" />
+    <None Include="wwwroot\owlcarousel\docs_src\assets\scss\highlight.scss" />
+    <None Include="wwwroot\owlcarousel\docs_src\assets\scss\_settings.scss" />
+    <None Include="wwwroot\owlcarousel\docs_src\assets\vendors\foundation.min.js" />
+    <None Include="wwwroot\owlcarousel\docs_src\assets\vendors\highlight.js" />
+    <None Include="wwwroot\owlcarousel\docs_src\assets\vendors\jquery.min.js" />
+    <None Include="wwwroot\owlcarousel\docs_src\assets\vendors\jquery.min.map" />
+    <None Include="wwwroot\owlcarousel\docs_src\assets\vendors\jquery.mousewheel.min.js" />
+    <None Include="wwwroot\owlcarousel\docs_src\helpers\modulo.js" />
+    <None Include="wwwroot\owlcarousel\docs_src\helpers\test.js" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\layouts\demos.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\layouts\docs.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\layouts\home.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\animate.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\autoheight.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\autoplay.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\autowidth.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\basic.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\center.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\demos.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\events.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\lazyLoad.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\merge.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\mousewheel.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\responsive.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\rtl.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\stagepadding.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\test.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\urlhashnav.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\demos\video.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\docs\api-classes.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\docs\api-events.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\docs\api-options.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\docs\dev-buildin-plugins.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\docs\dev-external.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\docs\dev-plugin-api.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\docs\dev-styles.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\docs\started-faq.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\docs\started-installation.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\docs\started-welcome.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\docs\support-changelog.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\docs\support-contact.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\docs\support-contributing.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\pages\index.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\partials\footer.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\partials\head.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\partials\header.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\partials\home-carousel.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\partials\home-features.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\partials\home-hero.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\partials\home-teaser-text.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\partials\javascripts.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\partials\releated-docs.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\partials\sidenav-docs.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\partials\title.hbs" />
+    <None Include="wwwroot\owlcarousel\docs_src\templates\partials\vendors.hbs" />
+    <None Include="wwwroot\owlcarousel\Gruntfile.js" />
+    <None Include="wwwroot\owlcarousel\ISSUE_TEMPLATE.md" />
+    <None Include="wwwroot\owlcarousel\LICENSE" />
+    <None Include="wwwroot\owlcarousel\README.md" />
+    <None Include="wwwroot\owlcarousel\ROADMAP.md" />
+    <None Include="wwwroot\owlcarousel\src\js\.jscsrc" />
+    <None Include="wwwroot\owlcarousel\src\js\.jshintrc" />
+    <None Include="wwwroot\owlcarousel\src\js\owl.animate.js" />
+    <None Include="wwwroot\owlcarousel\src\js\owl.autoheight.js" />
+    <None Include="wwwroot\owlcarousel\src\js\owl.autoplay.js" />
+    <None Include="wwwroot\owlcarousel\src\js\owl.autorefresh.js" />
+    <None Include="wwwroot\owlcarousel\src\js\owl.carousel.js" />
+    <None Include="wwwroot\owlcarousel\src\js\owl.hash.js" />
+    <None Include="wwwroot\owlcarousel\src\js\owl.lazyload.js" />
+    <None Include="wwwroot\owlcarousel\src\js\owl.navigation.js" />
+    <None Include="wwwroot\owlcarousel\src\js\owl.support.js" />
+    <None Include="wwwroot\owlcarousel\src\js\owl.support.modernizr.js" />
+    <None Include="wwwroot\owlcarousel\src\js\owl.video.js" />
+    <None Include="wwwroot\owlcarousel\src\scss\owl.carousel.scss" />
+    <None Include="wwwroot\owlcarousel\src\scss\owl.theme.default.scss" />
+    <None Include="wwwroot\owlcarousel\src\scss\owl.theme.green.scss" />
+    <None Include="wwwroot\owlcarousel\src\scss\_animate.scss" />
+    <None Include="wwwroot\owlcarousel\src\scss\_autoheight.scss" />
+    <None Include="wwwroot\owlcarousel\src\scss\_core.scss" />
+    <None Include="wwwroot\owlcarousel\src\scss\_lazyload.scss" />
+    <None Include="wwwroot\owlcarousel\src\scss\_theme.default.scss" />
+    <None Include="wwwroot\owlcarousel\src\scss\_theme.green.scss" />
+    <None Include="wwwroot\owlcarousel\src\scss\_theme.scss" />
+    <None Include="wwwroot\owlcarousel\src\scss\_video.scss" />
+    <None Include="wwwroot\owlcarousel\test\unit\autoplay.js" />
+    <None Include="wwwroot\owlcarousel\test\unit\core.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\Image\" />
+    <Folder Include="wwwroot\uploads\" />
+  </ItemGroup>
+
+</Project>

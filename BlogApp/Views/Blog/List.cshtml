@@ -1,0 +1,53 @@
+﻿@model IEnumerable<BlogApp.Models.BlogModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2 class="fontbig">Blog Listesi</h2>
+<div class="row">
+    <div class="col-md-8">
+        @if (Model.Count() == 0)
+        {
+            <div class="alert alert-danger d-flex align-items-center justify-content-between">
+                Kayıt Bulunamadı.
+                <span>
+                    <a href="~/Home/Index" class="btn btn-light">Anasayfaya dön</a>
+                </span>
+
+            </div>
+
+
+
+        }
+
+        @foreach (var item in Model)
+        {
+
+            <div class="card blogs">
+                <img src="~/Image/@item.Resim" asp-append-version="true" width="800px" height="300px" />
+                <div class="card-body text-capitalize">
+                    <h5 class="card-title">@item.Baslik</h5>
+                    <p class="card-text mb-2">@item.Aciklama</p>
+                    <a type="button" href="~/Blog/Details/@item.Id" class="btn btn-primary">Daha Fazla...</a>
+                    @if (@item.Id % 2 == 0)
+                    {
+                        <span class="badge bg-warning text-dark float-end text-capitalize categorylistbadge">@item.KategoriAdi</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-info text-dark float-end text-capitalize categorylistbadge">@item.KategoriAdi</span>
+                    }
+                    <p class="mt-3 ps-2 py-1 fw-lighter border border-2">
+                        <i class="bi bi-clock"></i>
+                        @item.EklenmeTarihi
+                    </p>
+                </div>
+            </div>
+
+        }
+    </div>
+    @*<div class="col-md-4 mt-4">
+            @await Html.PartialAsync("_Search")
+        </div>*@
+
+</div>

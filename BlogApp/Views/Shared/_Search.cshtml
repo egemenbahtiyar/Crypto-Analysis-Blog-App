@@ -1,0 +1,15 @@
+﻿@using (Html.BeginForm("List", "Blog", FormMethod.Get))
+{
+<div>
+    <h4>Blog Arama</h4>
+    <hr />
+
+    <div class="input-group me-2" type="search" placeholder="Blog Search" aria-label="Search">
+        @Html.TextBox("q", null, new { @class = "form-control" })
+        <span>
+            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+        </span>
+    </div>
+    
+</div>
+}

@@ -1,0 +1,40 @@
+﻿@model BlogApp.Models.Superuser
+@{
+    ViewData["Title"] = "Login";
+}
+
+<section class="vh-100" style="background-color: #508bfc;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+                        <form asp-controller="Login" asp-action="Login" method="post">
+                            <div class="input-group mb-3">
+                                <input asp-for="KullaniciAdi" type="text" class="form-control" placeholder="KullaniciAdi">
+                                
+                            </div>
+                            <div class="input-group mb-3">
+                                <input asp-for="Sifre" type="password" class="form-control" placeholder="Şifre">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <span class="fas fa-lock"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 justify-content-center">
+                                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                            </div>
+                        </form>
+                        <hr class="my-4">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

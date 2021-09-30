@@ -1,0 +1,30 @@
+﻿@model IEnumerable<BlogApp.Models.Category>
+@*<div class="CategoryListComponent">
+        <h3>Category List</h3>
+        <hr />
+        @foreach (var item in Model)
+        {
+
+            <div class="d-inline-block">
+                <a href="~/Blog/List/@item.Id" class="CategoryListItems">@item.KategoriAdi</a>
+            </div>
+
+
+        }
+
+    </div>*@
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Kategoriler
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        @foreach (var item in Model)
+        {
+            <li><a class="dropdown-item mb-2" href="~/Blog/List/@item.Id">@item.KategoriAdi</a></li>
+        }
+    </ul>
+
+    
+</li>
+
+

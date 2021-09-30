@@ -1,0 +1,53 @@
+﻿@model BlogApp.Models.New
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>Haber Ekle</h1>
+
+<h4>Haber</h4>
+<hr />
+<div class="row">
+    <div class="col">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="HaberBaslik" class="control-label"></label>
+                <input asp-for="HaberBaslik" class="form-control" />
+                <span asp-validation-for="HaberBaslik" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageFile" class="control-label"></label>
+                <input asp-for="ImageFile" accept="image/*">
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HaberIcerik" class="control-label"></label>
+                <textarea asp-for="HaberIcerik" class="form-control" id="habericerikcreate"></textarea>
+                <span asp-validation-for="HaberIcerik" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Ekle" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-light btn-sm" asp-action="Index">Listeye geri dön</a>
+</div>
+@section Scripts {
+
+    <script>
+        CKEDITOR.replace('habericerikcreate', {
+            height: 400,
+            filebrowserUploadUrl: '/Blog/UploadCKEditor'
+
+        });
+    </script>
+
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

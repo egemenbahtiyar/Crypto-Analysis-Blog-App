@@ -1,0 +1,25 @@
+﻿@model BlogApp.Models.Category
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>Detay</h1>
+
+<div>
+    <h4>Kategori</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KategoriAdi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KategoriAdi)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-warning btn-sm"asp-action="Edit" asp-route-id="@Model.Id">Düzenle</a> |
+    <a class="btn btn-light btn-sm" asp-action="Index">Listeye geri dön</a>
+</div>

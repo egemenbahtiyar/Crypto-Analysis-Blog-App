@@ -1,0 +1,94 @@
+﻿@model IEnumerable<BlogApp.Models.Blog>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>Index</h1>
+<hr />
+<p>
+    <a class="btn btn-primary" asp-action="Create">Yeni Blog ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Baslik)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aciklama)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Resim)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EklenmeTarihi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Onay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Anasayfa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category.KategoriAdi)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Baslik)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aciklama)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Resim)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EklenmeTarihi)
+            </td>
+            <td>
+                @if (item.Onay)
+                {
+
+                    <span class="badge bg-success">Onaylı</span>
+
+                }
+                else
+                {
+                    <span class="badge bg-warning">Onay Bekliyor</span>
+
+                }
+            </td>
+            <td>
+                @if (item.Anasayfa)
+                {
+
+                    <span class="badge bg-success">Onaylı</span>
+
+                }
+                else
+                {
+                    <span class="badge bg-warning">Onay Bekliyor</span>
+
+                }
+            </td>
+            <td>
+
+                @Html.DisplayFor(modelItem => item.Category.KategoriAdi)
+            </td>
+            <td>
+                <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.Id">Düzenle</a> |
+                <a class="btn btn-primary btn-sm" asp-action="Details" asp-route-id="@item.Id">Detay</a> |
+                <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.Id">Sil</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,283 @@
+﻿/*Tarayıcı css sıfırlama*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/***************************************************************SIFIRLAMA*/
+
+.navbar {
+	padding: 40px;
+	background-color: #3b3b3b;
+
+}
+.navbar-collapse{
+	position:relative;
+}
+.navbar-nav {
+	position: absolute;
+	right: 0;
+}
+.nav-item a:hover {
+	background-color: #fed319;
+	color: black;
+}
+.nav-item a:hover navbarDropdown{
+	background-color: #fed319;
+	color: black;
+}
+.owl-carousel {
+	position: relative;
+	margin-bottom: 50px;
+}
+
+/*.owl-carousel img{
+	width:100%;
+	max-height:500px;
+	height:auto;
+	
+
+}*/
+/*.card img {
+	width: 100%;
+	height: auto;
+}*/
+.owl-dots .owl-dot span{
+	padding:5px 10px;
+	width:50px;
+	height:50px;
+	background-color:transparent;
+	border: 2px solid white;
+}
+
+#searchinput {
+	background-color: #3b3b3b;
+	color: white;
+}
+.search-box {
+	width: 100%;
+	color: white;
+	opacity: 0;
+	visibility: hidden;
+	height: 0;
+}
+.search-box.active {
+	margin-bottom:30px;
+	opacity: 1;
+	visibility: visible;
+	height:100%;
+	-webkit-animation: flip-horizontal-top 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+			animation: flip-horizontal-top 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@-webkit-keyframes flip-horizontal-top {
+	0% {
+		-webkit-transform: rotateX(0);
+		transform: rotateX(0);
+	}
+
+	100% {
+		-webkit-transform: rotateX(360deg);
+		transform: rotateX(360deg);
+	}
+}
+
+@keyframes flip-horizontal-top {
+	0% {
+		-webkit-transform: rotateX(0);
+		transform: rotateX(0);
+	}
+
+	100% {
+		-webkit-transform: rotateX(360deg);
+		transform: rotateX(360deg);
+	}
+}
+
+.nav-link {
+	color:white;
+}
+
+
+.fontbig{
+	font-size:42px;
+	margin:20px auto;
+	padding-top:10px;
+}
+
+.bi-currency-bitcoin {
+	color: #fed319;
+	font-size: 36px;
+}
+.categorylistbadge{
+	padding:10px 20px;
+}
+
+.iletisim {
+	width: 100%;
+	background-color: #212529;
+	padding:40px;
+
+}
+
+.CategoryListComponent{
+	margin-top:30px;
+	border:1px solid black;
+	padding:10px 20px 30px 10px;
+}
+.CategoryListComponent h3 {
+	font-size:40px;
+	margin-bottom:30px;
+}
+
+.CategoryListItems {
+	color:darkslateblue;
+	font-size: 26px;
+	text-decoration: none;
+	text-transform:capitalize;
+	padding-right:20px;
+	line-height:40px;
+	
+}
+.CategoryListItems:hover {
+	color: cornflowerblue;
+}
+.blogindex{
+	margin-top:50px;
+}
+.blogs{
+	margin-bottom:30px;
+	width:800px;
+}
+/*.slicknav_menu {
+	display: none;
+}
+.slicknav_menu a {
+	float:left;
+}
+.slicknav_menu .slicknav_nav a {
+	padding: 5px 10px;
+	margin: 5px;
+	text-decoration: none;
+	color: white;
+}
+.slicknav_menu .dropdown-menu{
+	background-color:#4c4c4c;
+	position:relative;
+	top:20px;
+	right:0px;
+}
+.slicknav_menu .slicknav_arrow{
+	display:none;
+}*/
+.slicknav_menu {
+	display: none;
+}
+
+@media screen and (max-width: 40em) {
+	/* #menu is the original menu */
+	#menu {
+		display: none;
+	}
+
+	.slicknav_menu {
+		display: block;
+		margin-bottom: 5px;
+		position:relative;
+	}
+	.slicknav_nav{
+		display:flex;
+	}
+	.slicknav_nav .dropdown-menu{
+		background-color:transparent;
+		position:relative;
+	}
+	.nav-item dropdown .slicknav_parent .slicknav_open li {
+		text-align:center;
+	}
+	.slicknav_nav .dropdown-menu li {
+		float: left;
+		color: black;
+		display:block
+	}
+	.slicknav_nav .slicknav_arrow{
+		display:none;
+	}
+	.navbar {
+		display: none;
+	}
+	.slicknav_open{
+		display:block;
+	}
+	.slicknav_menu ul li:nth-child(5){
+		display:none;
+	}
+	.search-box {
+		width: 100%;
+		color: orange;
+		opacity: 1;
+		visibility: visible;
+		height: 100%;
+		margin-bottom:5px;
+	}
+		
+
+}
+.newImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 400px;
+}
+
+
+
